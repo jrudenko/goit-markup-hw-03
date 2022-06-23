@@ -46,6 +46,10 @@ p {
     margin: 0;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
 /* Сітка flex-box */
 
 .card-set {
@@ -74,7 +78,7 @@ p {
 .section {
     padding-bottom: 94px;
     padding-top: 94px;
-}
+    }
 
 /* Ховер */
 .header {
@@ -116,17 +120,14 @@ color: var(--accent-color);}
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-text-color)    
-}
-
-.mail {
-    padding: 32px 50px 32px 0;
-}
-
-.tel {
     padding: 32px 0;
-}  
+    letter-spacing: 0.02em;
+    color: var(--title-text-color)   
+    
+}
+.list-mail {
+    margin-right: 50px;
+}
 
 .mail:hover,
 .mail:focus,
@@ -166,15 +167,16 @@ color: var(--accent-color);}
 .list{
     list-style: none;
     display: flex;
-    padding: 0;   
-    margin: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    
 }    
-
 
 .header-group { 
     display: flex; 
     margin-left: auto;
    
+      
    
 }
 
@@ -234,11 +236,11 @@ img {
 
 .benefits {
     --items: 4;
+    
 }
-.list {
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 0;
+.about-feature {
+    margin: -15px;
+    
 }
 .items-worc {
     width: 370px;
@@ -315,15 +317,18 @@ img {
     color: var(--primary-text-color);
     margin-bottom: 50px;
 }
+.desc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
 .name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-
-    margin-top: 30px;
+    color: var(--primary-text-color);    
     margin-bottom: 10px;
 }
 .post {
@@ -332,10 +337,10 @@ img {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
-
-    padding-bottom: 30px;
+    color: var(--title-text-color);   
 }
+
+
 
 /* Футер */
 .footer{
